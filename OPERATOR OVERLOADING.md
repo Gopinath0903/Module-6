@@ -4,39 +4,55 @@
 ---
 
 ### AIM  
-To write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: `Complex`, where the objects `Ob1 = Complex(10, 21)` and `Ob2 = Complex(2, 3)` represent complex numbers.
+To write a  Python program for simply using the overloading operator for adding two objects.
 
 ---
 
 ### ALGORITHM
 
-1. **Start the Program.**
-2. **Define the Complex class**:
-   - Define the constructor `__init__()` to accept two parameters: `real` and `imag` (representing the real and imaginary parts of the complex number).
-   - Assign these values to `self.real` and `self.imag` respectively.
-3. **Define the `__truediv__()` method** to perform the division of two complex numbers:
-   - Calculate the real part of the result as the division of `self.real` by `other.real`.
-   - Calculate the imaginary part of the result as the division of `self.imag` by `other.imag`.
-   - Return a new Complex object with the calculated real and imaginary parts.
-4. **Define the `__repr__()` method** to represent the complex number as a string.
-   - Return a string formatted to display the real and imaginary parts with one decimal place using `f"{self.real:.1f}, {self.imag:.1f}"`.
-5. **Create two objects of the Complex class**:
-   - `Ob1 = Complex(10, 21)` represents the complex number `10 + 21i`.
-   - `Ob2 = Complex(2, 3)` represents the complex number `2 + 3i`.
-6. **Perform the division operation**: Use the `/` operator to divide `Ob1` by `Ob2`. This will call the `__truediv__()` method.
-7. **Print the result**: Print the result of the division, which will be formatted by the `__repr__()` method.
-8. **End the Program.**
+1. **Start**
+2. Define a class `Add` with:
+
+   * `__init__` method to accept four inputs (`a`, `b`, `c`, `d`)
+   * `add` method to:
+
+     * Add `a` and `b` (integer addition)
+     * Concatenate `c` and `d` (string concatenation)
+3. Take input for `a` (integer), `b` (integer), `c` (string), and `d` (string)
+4. Create an object of class `Add`
+5. Call the `add` method to display the sum of integers and concatenated strings
+6. **End**
+
 
 ---
 
 ### PROGRAM
 
 ```
+Reg no-212223070007
+Nmae-Gopinath G
 
+class Add:
+    def __init__(self,a,b,c,d):
+        self.a=a
+        self.b=b
+        self.c=c
+        self.d=d
+    def add(self):
+        print(": ",self.a+self.b)
+        print(": ",self.c+self.d)
+a=int(input())
+b=int(input())
+c=input()
+d=input()
+x=Add(a,b,c,d)
+x.add()
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/e1f62d7b-51e3-4fce-83ec-13059818b392)
+
 
 ### RESULT
-
+Thus the Python program for simply using the overloading operator for adding two objects was executed successfully.
