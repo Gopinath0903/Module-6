@@ -4,41 +4,69 @@
 ---
 
 ### AIM  
-To write a Python program to define the abstract base class named `Polygon` and also define the abstract method. This base class is inherited by various subclasses. Implement the abstract method in each subclass. Create objects of the subclasses and invoke the `sides()` method.
+To write a Python program to import the abc module to create the abstract base class. Create the Car class that inherit the ABC class and define an abstract method named mileage(). then inherit the base class from the three different subclasses and implement the abstract method differently. Create the objects to call the abstract method.
 
 ---
 
 ### ALGORITHM
 
-1. **Start the Program.**
-2. **Import the ABC class** from the `abc` module to implement abstraction.
-3. **Define the abstract base class Polygon**:
-   - Inherit from `ABC` (Abstract Base Class).
-   - Define an abstract method `sides()` with no implementation.
-4. **Define the Triangle class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Triangle has 3 sides"`.
-5. **Define the Pentagon class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Pentagon has 5 sides"`.
-6. **Define the Hexagon class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Hexagon has 6 sides"`.
-7. **Define the Square class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"I have 4 sides"`.
-8. **Create an object `t` of the Triangle class** and call the `sides()` method to print the number of sides.
-9. **Create an object `s` of the Square class** and call the `sides()` method to print the number of sides.
-10. **Create an object `p` of the Pentagon class** and call the `sides()` method to print the number of sides.
-11. **Create an object `k` of the Hexagon class** and call the `sides()` method to print the number of sides.
-12. **End the Program.**
+1. **Start**
+2. **Import** the `ABC` and `abstractmethod` from the `abc` module.
+3. **Define** an abstract class `Car` with an abstract method `mileage()`.
+4. **Create** a subclass `Tesla` that:
+
+   * Inherits from `Car`
+   * Implements the `mileage()` method
+5. **Create** a subclass `Ford` that:
+
+   * Inherits from `Car`
+   * Implements the `mileage()` method
+6. **Create** a subclass `BMW` that:
+
+   * Inherits from `Car`
+   * Implements the `mileage()` method
+7. **Create objects** of `Tesla`, `Ford`, and `BMW`.
+8. **Call** the `mileage()` method on each object to display the mileage information.
+9. **End**
+
 
 ---
 
 ### PROGRAM
 
 ```
+Reg no-212223070007
+Name-Gopinath G
+
+from abc import ABC, abstractmethod
+class Car(ABC):
+
+    @abstractmethod
+    def mileage(self):
+        pass
+class Tesla(Car):
+    def mileage(self):
+        print("Tesla mileage is 300 miles per charge.")
+class Ford(Car):
+    def mileage(self):
+        print("Ford mileage is 25 miles per gallon.")
+class BMW(Car):
+    def mileage(self):
+        print("BMW mileage is 30 miles per gallon.")
+tesla_car = Tesla()
+ford_car = Ford()
+bmw_car = BMW()
+tesla_car.mileage()
+ford_car.mileage()
+bmw_car.mileage()
 
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/1a21fb48-07d1-4018-acfe-fad2a7767d1e)
+
 
 ### RESULT
+Thus the import the abc module to create the abstract base class. Create the Car class that inherit the ABC class and define an abstract method named mileage(). then inherit the base class from the three different subclasses and implement the abstract method differently. Create the objects to call the abstract method was  executed successfully
