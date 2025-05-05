@@ -26,10 +26,37 @@ To write a Python program to create a `Counter` class that can increment the val
 ### PROGRAM
 
 ```
+Reg no-212223070007
+Name-Gopinath G
+
+class Counter:
+    def __init__(self):
+        self.value = 0  # Initialize counter to 0
+
+    def increment(self):
+        self.value += 1  # Increase counter by 1
+
+    def get_value(self):
+        return self.value  # Return current counter value
+
+    def reset(self):
+        self.value = 0  # Reset counter to 0
+if __name__ == "__main__":
+    counter = Counter()
+    print("Initial value:", counter.get_value())
+    
+    counter.increment()
+    counter.increment()
+    print("After incrementing twice:", counter.get_value())
+    
+    counter.reset()
+    print("After reset:", counter.get_value())
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/dc9be8fb-0fcd-4add-85a2-b1013b8ced7d)
 
 
 ### RESULT
+Thus the python program to create a `Counter` class that can increment the value of a counter  was executed successfully
